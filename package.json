@@ -1,6 +1,6 @@
 {
   "name": "codex-usage-widget",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Cross-platform desktop usage widget prototype for Codex",
   "main": "main.cjs",
   "scripts": {
@@ -16,7 +16,8 @@
     "appId": "local.codex.usage.widget",
     "productName": "Codex Usage Widget",
     "files": ["main.cjs", "preload.cjs", "renderer/**/*"],
-    "mac": { "target": ["dmg"] },
+    "afterPack": "scripts/after-pack.cjs",
+    "mac": { "target": ["dmg"], "identity": null },
     "win": { "target": ["nsis"] }
   }
 }
