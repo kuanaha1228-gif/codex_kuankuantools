@@ -5,8 +5,8 @@
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "package:mac": "electron-builder --mac dmg",
-    "package:win": "electron-builder --win nsis"
+    "package:mac": "electron-builder --mac dmg --publish never",
+    "package:win": "electron-builder --win nsis --publish never"
   },
   "devDependencies": {
     "electron": "^37.2.6",
@@ -17,7 +17,6 @@
     "productName": "Codex Usage Widget",
     "files": ["main.cjs", "preload.cjs", "renderer/**/*"],
     "mac": { "target": ["dmg"] },
-    "win": { "target": ["nsis"] },
-    "publish": "never"
+    "win": { "target": ["nsis"] }
   }
 }
