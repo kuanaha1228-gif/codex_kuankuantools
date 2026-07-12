@@ -17,6 +17,7 @@
     "productName": "Codex Usage Widget",
     "files": ["main.cjs", "preload.cjs", "renderer/**/*"],
     "mac": { "target": ["dmg"] },
-    "win": { "target": ["nsis"] }
+    "win": { "target": ["nsis"] },
+    "publish": "never"
   }
 }
